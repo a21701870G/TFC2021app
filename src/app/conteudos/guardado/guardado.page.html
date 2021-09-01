@@ -1,0 +1,56 @@
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-buttons slot="start" color="secondary" (click)="back()">
+        <ion-icon name="arrow-back" color="secondary" size="large"></ion-icon>
+      </ion-buttons>
+      <ion-title text-center color="secondary">Guardado</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-card>
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/img/Utilizador%205.jpg">
+        </ion-avatar>
+        <h2>Norberto Rocha</h2>
+        <p>1 de Junho</p>
+      </ion-item>
+
+      <img src="assets/img/Programacao%20web.jpg" routerLink="../../../programacao">
+
+      <ion-card-content>
+        <p>Resumos de Programação Web</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button color="primary" clear small icon-start>
+            <ion-icon name='thumbs-up'></ion-icon>
+            20 Gostos
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button color="primary" clear small icon-start>
+            <ion-icon name='text'></ion-icon>
+            4 Comentários
+          </button>
+        </ion-col>
+        <ion-col align-self-center text-center>
+          <ion-note>
+            5h atras
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+      <ion-fab-button  routerLink="../../../uploadficheiros">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+  </ion-content>

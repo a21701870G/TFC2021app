@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-button slot="start" color="dark" (click)="back()">
+      <ion-icon name="arrow-back" color="" size="large"></ion-icon>
+    </ion-button>
+    <p align="center">
+      <ion-title>
+        New Topic
+      </ion-title>
+    </p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <input type="text" id="name" name="name" required minlength="3" maxlength="250">
+  </ion-item>
+  <ion-button expand="full" color="dark">
+    Send
+  </ion-button>
+
+
+</ion-content>
