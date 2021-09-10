@@ -50,11 +50,15 @@
 <ion-button expand="full" color = "dark" (click)="goNovo()">
   Ver Novos
 </ion-button>
-<ion-button expand="full" align="end" color = "dark" class="col text-right" (click)="goBetClick()">
+<ion-button expand="full" align="end" color = "dark" class="col text-right" (click)="goGuardado()">
   Guardados
 </ion-button>
 
 </div>
-
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark" (click)="goUpload()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>

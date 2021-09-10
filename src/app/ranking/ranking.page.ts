@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Task} from '../task';
+
 import {IonItemSliding} from '@ionic/angular';
 import {FireStorageService} from '../fire-storage.service';
 import {Observable} from 'rxjs';
@@ -13,7 +13,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./ranking.page.scss'],
 })
 export class RankingPage implements OnInit {
-  public tasks: Observable<Array<Task>>;
+
   constructor(public fireStorageService: FireStorageService, private authService: FireAuthService,
               private router: Router) { }
 
@@ -23,8 +23,8 @@ export class RankingPage implements OnInit {
     this.router.navigate(['/ranking']);
   }
 
-  public goBetsPage(): void{
-    this.router.navigate(['/bets'])
+  public goConteudoPage(): void{
+    this.router.navigate(['/conteudo'])
   }
   public goForumPage(): void{
     this.router.navigate(['/forum'])

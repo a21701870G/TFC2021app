@@ -4,11 +4,12 @@ import {FireAuthService} from '../fire-auth.service';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-forum',
-  templateUrl: './forum.page.html',
-  styleUrls: ['./forum.page.scss'],
+  selector: 'app-conteudo',
+  templateUrl: './conteudo.page.html',
+  styleUrls: ['./conteudo.page.scss'],
+
 })
-export class ForumPage implements OnInit {
+export class ConteudoPage implements OnInit {
 
   constructor(public fireStorageService: FireStorageService, private authService: FireAuthService,
               private router: Router) { }
@@ -28,10 +29,15 @@ export class ForumPage implements OnInit {
   public goProfilePage(): void {
     this.router.navigate(['/home']);
   }
-  public goTopic(): void {
-    this.router.navigate(['/topic']);
+
+  public goUpload(): void {
+    this.router.navigate(['/uploadficheiros']);
   }
-  public go(): void {
-    this.router.navigate(['/topic']);
+  public goGuardado(): void {
+    this.router.navigate(['/guardado']);
   }
+  public goNovo(): void {
+    this.router.navigate(['/novo']);
+  }
+
 }

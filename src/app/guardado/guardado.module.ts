@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BetptPageRoutingModule } from './betpt-routing.module';
+import { GuardadoPageRoutingModule } from './guardado-routing.module';
 
-import { BetptPage } from './betpt.page';
+import { GuardadoPage } from './guardado.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BetptPageRoutingModule
+    GuardadoPageRoutingModule
   ],
-  declarations: [BetptPage]
+  declarations: [GuardadoPage]
 })
-export class BetptPageModule {}
+export class GuardadoPageModule {}

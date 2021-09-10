@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BetsPageRoutingModule } from './bets-routing.module';
+import { UploadficheirosPageRoutingModule } from './uploadficheiros-routing.module';
 
-import { BetsPage } from './bets.page';
+import { UploadficheirosPage } from './uploadficheiros.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BetsPageRoutingModule
-
+    UploadficheirosPageRoutingModule
   ],
-  declarations: [BetsPage]
+  declarations: [UploadficheirosPage]
 })
-export class BetsPageModule {}
+export class UploadficheirosPageModule {}

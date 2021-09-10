@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { Bet365Page } from './bet365.page';
+import { NewPage } from './new.page';
 
-describe('Bet365Page', () => {
-  let component: Bet365Page;
-  let fixture: ComponentFixture<Bet365Page>;
+describe('NewPage', () => {
+  let component: NewPage;
+  let fixture: ComponentFixture<NewPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Bet365Page ],
+      declarations: [ NewPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Bet365Page);
+    fixture = TestBed.createComponent(NewPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

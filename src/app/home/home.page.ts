@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Task} from '../task';
+
 import {IonItemSliding} from '@ionic/angular';
 import {FireStorageService} from '../fire-storage.service';
 import {Observable} from 'rxjs';
@@ -13,14 +13,13 @@ import {Router} from '@angular/router';
 })
 export class HomePage implements OnInit {
 
-    public tasks: Observable<Array<Task>>;
+
 
     constructor(public fireStorageService: FireStorageService, private authService: FireAuthService,
                 private router: Router) {
     }
 
     public ngOnInit(): void {
-        this.tasks = this.fireStorageService.getTasks();
     }
     public logout(): void {
         this.authService.doLogout().then(() => this.router.navigate(['/login']), err => console.log(err));
@@ -31,8 +30,8 @@ export class HomePage implements OnInit {
     public goSettingsPage(): void{
         this.router.navigate(['/settings'])
     }
-    public goBetsPage(): void{
-        this.router.navigate(['/bets'])
+    public goConteudoPage(): void{
+        this.router.navigate(['/Conteudo'])
     }
     public goForumPage(): void{
         this.router.navigate(['/forum'])

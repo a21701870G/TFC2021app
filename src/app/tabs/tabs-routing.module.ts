@@ -18,12 +18,12 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'bets',
+        path: 'conteudo',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../bets/bets.module').then(m => m.BetsPageModule)
+              import('../conteudo/conteudo.module').then(m => m.ConteudoPageModule)
           }
         ]
       },
@@ -38,12 +38,12 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'sporting',
+        path: 'new',
         children: [
           {
             path: '',
             loadChildren: () =>
-                import('../sporting/sporting.module').then(m => m.SportingPageModule)
+                import('../new/new.module').then(m => m.NewPageModule)
           }
         ]
       },

@@ -15,14 +15,13 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 
 export const firebaseConfig = {
-    apiKey: 'AIzaSyCsKzUQcmIfNv9pcuD3o0pZ0133h4nflZM',
-    authDomain: 'foot-bet.firebaseapp.com',
-    databaseURL: 'https://foot-bet.firebaseio.com',
-    projectId: 'foot-bet',
-    storageBucket: 'foot-bet.appspot.com',
-    messagingSenderId: '797957180605',
-    appId: '1:797957180605:web:aa09087e5b974e8ee2bbd4',
-    measurementId: 'G-ERN6CNN2JN'
+    apiKey: "AIzaSyDXai2BbSP_CZzAdSRx536BCgbJkoM7slA",
+    authDomain: "tfc2021ga.firebaseapp.com",
+    projectId: "tfc2021ga",
+    storageBucket: "tfc2021ga.appspot.com",
+    messagingSenderId: "259203710416",
+    appId: "1:259203710416:web:403e23148eb40b7ed40dd5",
+    measurementId: "G-Y2PELNL2GR"
 };
 
 @NgModule({

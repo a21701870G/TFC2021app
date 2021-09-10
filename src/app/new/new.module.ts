@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Bet365PageRoutingModule } from './bet365-routing.module';
+import { NewPageRoutingModule } from './new-routing.module';
 
-import { Bet365Page } from './bet365.page';
+import { NewPage } from './new.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Bet365PageRoutingModule
+    NewPageRoutingModule
   ],
-  declarations: [Bet365Page]
+  declarations: [NewPage]
 })
-export class Bet365PageModule {}
+export class NewPageModule {}

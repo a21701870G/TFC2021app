@@ -4,17 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BetclickPageRoutingModule } from './betclick-routing.module';
+import { ConteudoPageRoutingModule } from './conteudo-routing.module';
 
-import { BetclickPage } from './betclick.page';
+import { ConteudoPage } from './conteudo.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BetclickPageRoutingModule
+    ConteudoPageRoutingModule
+
   ],
-  declarations: [BetclickPage]
+  declarations: [ConteudoPage]
 })
-export class BetclickPageModule {}
+export class ConteudoPageModule {}

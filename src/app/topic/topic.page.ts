@@ -19,7 +19,7 @@ export class TopicPage implements OnInit {
   public back(){
     this.location.back()
   }
-  public goTopicForum(): void{
-    this.router.navigate(['/topic-forum'])
+  public goNew(): void{
+    this.router.navigate(['/new'])
   }
 }

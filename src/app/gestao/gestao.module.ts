@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SportingPageRoutingModule } from './sporting-routing.module';
+import { GestaoPageRoutingModule } from './gestao-routing.module';
 
-import { SportingPage } from './sporting.page';
+import { GestaoPage } from './gestao.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SportingPageRoutingModule
+    GestaoPageRoutingModule
   ],
-  declarations: [SportingPage]
+  declarations: [GestaoPage]
 })
-export class SportingPageModule {}
+export class GestaoPageModule {}

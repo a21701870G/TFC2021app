@@ -27,40 +27,24 @@ const routes: Routes = [
 
 
   {
-    path: 'sporting',
-    loadChildren: () => import('./sporting/sporting.module').then( m => m.SportingPageModule)
-  },
-  {
-    path: 'topic',
-    loadChildren: () => import('./topic/topic.module').then( m => m.TopicPageModule)
+    path: 'new',
+    loadChildren: () => import('./new/new.module').then(m => m.NewPageModule)
   },
   {
     path: 'change',
     loadChildren: () => import('./change/change.module').then( m => m.ChangePageModule)
   },
   {
-    path: 'pagina-apostas',
-    loadChildren: () => import('./pagina-apostas/pagina-apostas.module').then( m => m.PaginaApostasPageModule)
-  },
-  {
     path: 'change',
     loadChildren: () => import('./change/change.module').then( m => m.ChangePageModule)
   },
   {
-    path: 'topic-forum',
-    loadChildren: () => import('./topic-forum/topic-forum.module').then( m => m.TopicForumPageModule)
+    path: 'guardado',
+    loadChildren: () => import('./guardado/guardado.module').then(m => m.GuardadoPageModule)
   },
   {
-    path: 'bet365',
-    loadChildren: () => import('./bet365/bet365.module').then( m => m.Bet365PageModule)
-  },
-  {
-    path: 'betclick',
-    loadChildren: () => import('./betclick/betclick.module').then( m => m.BetclickPageModule)
-  },
-  {
-    path: 'betpt',
-    loadChildren: () => import('./betpt/betpt.module').then( m => m.BetptPageModule)
+    path: 'gestao',
+    loadChildren: () => import('./gestao/gestao.module').then(m => m.GestaoPageModule)
   },
   {
     path: 'home',
@@ -94,6 +78,18 @@ const routes: Routes = [
   {
     path: 'novo',
     loadChildren: () => import('./novo/novo.module').then( m => m.NovoPageModule)
+  },
+  {
+    path: 'uploadficheiros',
+    loadChildren: () => import('./uploadficheiros/uploadficheiros.module').then( m => m.UploadficheirosPageModule)
+  },
+  {
+    path: 'topic',
+    loadChildren: () => import('./topic/topic.module').then( m => m.TopicPageModule)
+  },
+  {
+    path: 'conteudo',
+    loadChildren: () => import('./conteudo/conteudo.module').then( m => m.ConteudoPageModule)
   },
 
 

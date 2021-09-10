@@ -23,9 +23,7 @@ export class FinishPage implements OnInit {
   public back(){
     this.location.back()
   }
-  public goHome(): void{
-    this.router.navigate(['/home'])
-  }
+
   public goRankingPage(): void {
     this.router.navigate(['/ranking']);
   }
